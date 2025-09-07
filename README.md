@@ -40,9 +40,6 @@ Lychee/
 │   │   │   │       └── val/
 │   │   │   │           ├── images/
 │   │   │   │           └── labels/
-│   │   │   ├── depth_estimate/
-│   │   │   │   ├── color/
-│   │   │   │   ├── gray/
 │   │   │   ├── augmentation/
 │   │   │   │   ├── full/
 │   │   │   │   │   ├── images/
@@ -98,17 +95,17 @@ Lychee/
 ## 🔢 Dataset Statistics
 ###  Raw data statistics
 <p align="center">
-  <img src="dataset_statistics.png" alt="Raw data statistics of the dataset" width="500"/>
+  <img src="doc/dataset_statistics.png" alt="Raw data statistics of the dataset" width="500"/>
 </p>
 
 ###  Detection annotation statistics
 <p align="center">
-  <img src="dataset_detection_annotation_statistics.png" alt="Detection annotation statistics of the dataset" width="500"/>
+  <img src="doc/dataset_detection_annotation_statistics.png" alt="Detection annotation statistics of the dataset" width="500"/>
 </p>
 
 ###  Grasping annotation statistics
 <p align="center">
-  <img src="dataset_grasping_annotation_statistics.png" alt="Grasping annotation statistics of the dataset" width="500"/>
+  <img src="doc/dataset_grasping_annotation_statistics.png" alt="Grasping annotation statistics of the dataset" width="500"/>
 </p>
 
 ---
