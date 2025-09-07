@@ -23,70 +23,68 @@ we constructed a new lychee dataset with the advantages of rich data types, larg
 ---
 
 ## 📂 Dataset Structure
+# 🍒 Lychee Dataset Structure
+
+```text
 Lychee/
-│── data/
-│ ├── 250605/
-│ │ ├── detection/
-│ │ │ ├── augmentation/
-│ │ │ │ ├── full/
-│ │ │ │ │ ├──images/
-│ │ │ │ │ ├──labels/  
-│ │ │ │ ├── split/
-│ │ │ │ │ ├──test/ 
-│ │ │ │ │ │ ├──images/
-│ │ │ │ │ │ ├──labels/  
-│ │ │ │ │ ├──train/ 
-│ │ │ │ │ │ ├──images/
-│ │ │ │ │ │ ├──labels/  
-│ │ │ │ │ ├──val/ 
-│ │ │ │ │ │ ├──images/
-│ │ │ │ │ │ ├──labels/  
-│ │ │ ├── depth_estimate/
-│ │ │ │ ├── color/
-│ │ │ │ ├── gray/
-│ │ │ ├── raw/
-│ │ │ │ ├── full/
-│ │ │ │ │ ├──images/
-│ │ │ │ │ ├──labels/  
-│ │ │ │ ├── split/
-│ │ │ │ │ ├──test/ 
-│ │ │ │ │ │ ├──images/
-│ │ │ │ │ │ ├──labels/  
-│ │ │ │ │ ├──train/ 
-│ │ │ │ │ │ ├──images/
-│ │ │ │ │ │ ├──labels/  
-│ │ │ │ │ ├──val/ 
-│ │ │ │ │ │ ├──images/
-│ │ │ │ │ │ ├──labels/  
-│ │ ├── grasp/
-│ │ │ ├── labels/
-│ │ │ ├── images/
-│ │ │ │ ├── corcell/
-│ │ │ │ ├── jacquard/
-│ ├── 250610_table/
-│ │ ├── detection/
-... 
-│ ├── 250611_rain/
-│ │ ├── detection/
-...
-│ │ ├── grasp/
-...
-│ ├── 250612/
-│ │ ├── detection/
-...
-│ │ ├── grasp/
-...
-│ ├── 250619/
-│ │ ├── detection/
-...
-│ │ ├── grasp/
-...
-│
-│── script/ 
-│
-│── doc/
-│ 
-│── README.md
+├── data/
+│   ├── 250605/
+│   │   ├── detection/
+│   │   │   ├── raw/
+│   │   │   │   ├── full/
+│   │   │   │   │   ├── images/
+│   │   │   │   │   └── labels/
+│   │   │   │   └── split/
+│   │   │   │       ├── test/
+│   │   │   │       │   ├── images/
+│   │   │   │       │   └── labels/
+│   │   │   │       ├── train/
+│   │   │   │       │   ├── images/
+│   │   │   │       │   └── labels/
+│   │   │   │       └── val/
+│   │   │   │           ├── images/
+│   │   │   │           └── labels/
+│   │   │   ├── depth_estimate/
+│   │   │   │   ├── color/
+│   │   │   │   ├── gray/
+│   │   │   ├── augmentation/
+│   │   │   │   ├── full/
+│   │   │   │   │   ├── images/
+│   │   │   │   │   └── labels/
+│   │   │   │   └── split/
+│   │   │   │       ├── test/
+│   │   │   │       │   ├── images/
+│   │   │   │       │   └── labels/
+│   │   │   │       ├── train/
+│   │   │   │       │   ├── images/
+│   │   │   │       │   └── labels/
+│   │   │   │       └── val/
+│   │   │   │           ├── images/
+│   │   │   │           └── labels/
+│   │   │   ├── depth_estimate/
+│   │   │   │   ├── color/
+│   │   │   │   ├── gray/
+│   │   ├── grasp/
+│   │   │   ├── labels/
+│   │   │   ├── images/
+│   │   │   │   ├── corcell/
+│   │   │   │   └── jacquard/
+│   ├── 250610_table/
+│   │   ├── detection/
+│   │   └── grasp/#empty
+│   ├── 250611_rain/
+│   │   ├── detection/
+│   │   └── grasp/
+│   ├── 250612/
+│   │   ├── detection/
+│   │   └── grasp/
+│   └── 250619/
+│       ├── detection/
+│       └── grasp/
+├── script/
+├── doc/
+└── README.md
+
 
 
 ---
@@ -99,7 +97,7 @@ Lychee/
 
 
 <p align="center">
-  <img src="doc/dataset annotation.png" alt="Annotation of the dataset" width="500"/>
+  <img src="doc/dataset_annotation.png" alt="Annotation of the dataset" width="500"/>
 </p>
 
 
@@ -111,7 +109,7 @@ Lychee/
 
 ###  Raw data statistics
 <p align="center">
-  <img src="dataset statistics.png" alt="Raw data statistics of the dataset" width="500"/>
+  <img src="dataset_statistics.png" alt="Raw data statistics of the dataset" width="500"/>
 </p>
 
 
@@ -119,7 +117,7 @@ Lychee/
 
 ###  Detection annotation statistics
 <p align="center">
-  <img src="dataset detection annotation statistics.png" alt="Detection annotation statistics of the dataset" width="500"/>
+  <img src="dataset_detection_annotation_statistics.png" alt="Detection annotation statistics of the dataset" width="500"/>
 </p>
 
 
@@ -127,7 +125,7 @@ Lychee/
 
 ###  Grasping annotation statistics
 <p align="center">
-  <img src="dataset grasping annotation statistics.png" alt="Grasping annotation statistics of the dataset" width="500"/>
+  <img src="dataset_grasping_annotation_statistics.png" alt="Grasping annotation statistics of the dataset" width="500"/>
 </p>
 
 
@@ -147,7 +145,7 @@ Lychee/
 We mixed the original and augmented images of maturity detection from the same date, randomly shuffled the image order, and split them into training, validation, and test sets with a ratio of 8:1:1. This design allows users to flexibly select subsets according to their task requirements and computational resources. For example, on devices with limited computational capacity, subsets from individual dates can be used independently, whereas on devices with sufficient resources, multiple subsets or the entire dataset can be combined for training.
 
 <p align="center">
-  <img src="doc/dataset use.png" alt="Usage Example of the dataset" width="500"/>
+  <img src="doc/dataset_splitting.png" alt="Usage Example of the dataset" width="500"/>
 </p>
 
 
