@@ -21,6 +21,7 @@ we constructed a new lychee dataset with the advantages of rich data types, larg
 ---
 
 ## 📂 Dataset Structure
+```text
 Lychee/
 ├── data/
 │   ├── 250605/
@@ -79,6 +80,7 @@ Lychee/
 ├── script/
 ├── doc/
 └── README.md
+```
 
 ---
 
