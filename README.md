@@ -7,7 +7,6 @@ we constructed a new lychee dataset with the advantages of rich data types, larg
 
 ---
 
-
 ## 📌 Introduction
 (1) It comprises 11,414 high-resolution images of multiple lychee varieties at different maturity stages, collected from major lychee-producing regions in China, covering broader varietal diversity, varying exposure levels, and diverse weather conditions; 
 (2) It provides high-quality, standardized maturity annotations for all images, as well as harvest annotations in two acquisition formats for ripe and unharvested lychees;
@@ -19,13 +18,9 @@ we constructed a new lychee dataset with the advantages of rich data types, larg
 |------------|----------------|-----------|-------------|----------|----------------|----------------|
 | **Lychee** | ☀️🌧️ Morning, noon, evening <br> 3 weeks of maturity | 🏠 Indoor (on-table) <br> 🌳 Outdoor (on-tree) | 📸 9658 (RGB) <br> 📡 1756 (Depth) | 🔍 3 (detection) <br> ✋ Custom (grasp) | 📦 Boxes (detection) <br> 📐 Rotate rectangle (grasp) | 🖼️ 1280×1024 |
 
-
 ---
 
 ## 📂 Dataset Structure
-# 🍒 Lychee Dataset Structure
-
-```text
 Lychee/
 ├── data/
 │   ├── 250605/
@@ -85,52 +80,36 @@ Lychee/
 ├── doc/
 └── README.md
 
-
-
 ---
 
-
-## 📝 Annotation Format
+## 📝 Dataset Annotation 
 - Format:
   - detection: **YOLO v5/v8** (`.txt`)  
   - grasp: **jacquard/corcell** (`.txt`)  
-
 
 <p align="center">
   <img src="doc/dataset_annotation.png" alt="Annotation of the dataset" width="500"/>
 </p>
 
-
 ---
+
 ## 🔢 Dataset Statistics
-
-
-
-
 ###  Raw data statistics
 <p align="center">
   <img src="dataset_statistics.png" alt="Raw data statistics of the dataset" width="500"/>
 </p>
-
-
-
 
 ###  Detection annotation statistics
 <p align="center">
   <img src="dataset_detection_annotation_statistics.png" alt="Detection annotation statistics of the dataset" width="500"/>
 </p>
 
-
-
-
 ###  Grasping annotation statistics
 <p align="center">
   <img src="dataset_grasping_annotation_statistics.png" alt="Grasping annotation statistics of the dataset" width="500"/>
 </p>
 
-
 ---
-
 
 ## 🌱 Applications
 - 🍒 Automated lychee harvesting robots  
@@ -140,7 +119,6 @@ Lychee/
 
 ---
 
-
 ## 🚀 Usage Example
 We mixed the original and augmented images of maturity detection from the same date, randomly shuffled the image order, and split them into training, validation, and test sets with a ratio of 8:1:1. This design allows users to flexibly select subsets according to their task requirements and computational resources. For example, on devices with limited computational capacity, subsets from individual dates can be used independently, whereas on devices with sufficient resources, multiple subsets or the entire dataset can be combined for training.
 
@@ -148,9 +126,7 @@ We mixed the original and augmented images of maturity detection from the same d
   <img src="doc/dataset_splitting.png" alt="Usage Example of the dataset" width="500"/>
 </p>
 
-
 ---
-
 
 @dataset{lychee2025,
   author = {Zhenpeng Zhang, Yi Wang, Shanglei Chai, Yingying Liu, Zekai Xie, Wenhao Huang, Pengyu Li, Zipei Luo, Dajiang Lu*, and Yibin Tian*},
