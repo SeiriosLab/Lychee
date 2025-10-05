@@ -1,5 +1,5 @@
 # 🍒 Lychee Dataset
-we constructed a new lychee dataset with the advantages of rich data types, large intra-class variations, diverse and comprehensive annotation formats, and well-defined maturity classifications.
+An RGB-D Image Dataset for Lychee Detection and Maturity Classification for Robotic Harvesting.
 
 <p align="center">
   <img src="doc/step.png" alt="The main steps of dataset preparation" width="500"/>
@@ -16,7 +16,7 @@ we constructed a new lychee dataset with the advantages of rich data types, larg
 
 | 🍒 Dataset | 🌦️ Environment | 🏞️ Scene | 📷 Modality | 🧩 Tasks | 🏷️ Annotation | 🖼️ Resolution |
 |------------|----------------|-----------|-------------|----------|----------------|----------------|
-| **Lychee** | ☀️🌧️ Morning, noon, evening <br> 3 weeks of maturity | 🏠 Indoor (on-table) <br> 🌳 Outdoor (on-tree) | 📸 9658 (RGB) <br> 📡 1756 (Depth) | 🔍 3 (detection) <br> ✋ Custom (grasp) | 📦 Boxes (detection) <br> 📐 Rotate rectangle (grasp) | 🖼️ 1280×1024 |
+| **Lychee** | ☀️🌧️ Morning, noon, evening <br> 3 weeks of maturity | 🏠 Indoor (on-table) <br> 🌳 Outdoor (on-tree) | 📸 9658 (RGB) <br> 📡 1756 (Depth) | 🔍 3 (detection) <br> | 📦 Boxes (detection) <br> 📐 Rotate rectangle (grasp) | 🖼️ 1280×1024 |
 
 ---
 
@@ -57,23 +57,14 @@ Lychee/
 │   │   │   ├── depth_estimate/
 │   │   │   │   ├── color/
 │   │   │   │   ├── gray/
-│   │   ├── grasp/
-│   │   │   ├── labels/
-│   │   │   ├── images/
-│   │   │   │   ├── corcell/
-│   │   │   │   └── jacquard/
 │   ├── 250610_table/
 │   │   ├── detection/
-│   │   └── grasp/#empty
 │   ├── 250611_rain/
 │   │   ├── detection/
-│   │   └── grasp/
 │   ├── 250612/
 │   │   ├── detection/
-│   │   └── grasp/
 │   └── 250619/
 │       ├── detection/
-│       └── grasp/
 ├── script/
 ├── doc/
 └── README.md
@@ -103,9 +94,9 @@ Lychee/
   <img src="doc/dataset_detection_annotation_statistics.png" alt="Detection annotation statistics of the dataset" width="500"/>
 </p>
 
-###  Grasping annotation statistics
+###  Maturity annotation statistics
 <p align="center">
-  <img src="doc/dataset_grasping_annotation_statistics.png" alt="Grasping annotation statistics of the dataset" width="500"/>
+  <img src="doc/dataset_maturity_annotation_statistics.png" alt="Grasping annotation statistics of the dataset" width="500"/>
 </p>
 
 ---
