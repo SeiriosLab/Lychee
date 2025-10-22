@@ -1,5 +1,6 @@
 # 🍒 Lychee Dataset
 An RGB-D Image Dataset for Lychee Detection and Maturity Classification for Robotic Harvesting.
+(This library is not suitable for storing data. We migrate the database-specific library: //data.mendeley.com/datasets/6svnttj9g4/1)
 
 <p align="center">
   <img src="doc/step.png" alt="The main steps of dataset preparation" width="500"/>
