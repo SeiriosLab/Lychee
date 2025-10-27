@@ -1,0 +1,15 @@
+WARNING ⚠️ no model scale passed. Assuming scale='l'.
+Traceback (most recent call last):
+  File "/data3/anaconda3/envs/Peno_rtdetr-resnet50/lib/python3.10/site-packages/ultralytics/engine/train_GhostResNetBlock.py", line 6, in <module>
+    model = YOLO('/data3/anaconda3/envs/Peno_rtdetr-resnet50/lib/python3.10/site-packages/ultralytics/cfg/models/rt-detr/rtdetr-resnet50-GhostResNetBlock.yaml', task="detect")
+  File "/data3/anaconda3/envs/Peno_yolo/lib/python3.9/site-packages/ultralytics/models/yolo/model.py", line 81, in __init__
+    super().__init__(model=model, task=task, verbose=verbose)
+  File "/data3/anaconda3/envs/Peno_yolo/lib/python3.9/site-packages/ultralytics/engine/model.py", line 149, in __init__
+    self._new(model, task=task, verbose=verbose)
+  File "/data3/anaconda3/envs/Peno_yolo/lib/python3.9/site-packages/ultralytics/engine/model.py", line 261, in _new
+    self.model = (model or self._smart_load("model"))(cfg_dict, verbose=verbose and RANK == -1)  # build model
+  File "/data3/anaconda3/envs/Peno_yolo/lib/python3.9/site-packages/ultralytics/nn/tasks.py", line 398, in __init__
+    self.model, self.save = parse_model(deepcopy(self.yaml), ch=ch, verbose=verbose)  # model, savelist
+  File "/data3/anaconda3/envs/Peno_yolo/lib/python3.9/site-packages/ultralytics/nn/tasks.py", line 1672, in parse_model
+    else globals()[m]
+KeyError: 'GhostResNetBlock'
